@@ -69,7 +69,7 @@
     margin: 100px 200px;
 }
 .banner img{
-    width: 100%;
+    width: 95%;
 }
 
 /* main features section  */
@@ -85,7 +85,8 @@
     width: 95%;
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    gap: 24px;
+    gap: 24px; 
+    margin-right: 20px;
 }
 
 .right-features{
@@ -94,6 +95,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+    margin-left:20px;
 }
 
 #dark{
@@ -115,13 +117,184 @@
     line-height: 53px;
 }
 
-/* media query responsive for mobile device*/
+/* features love and enjoy section */
+.love-enjoy{
+    margin: 100px 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+hr{
+    border: 2px solid  #FF900E;
+    width: 1px;
+    height: 106px;
+    background:#FF900E;
+    margin-right: 20px;
+
+}
+.heading-hr{
+    display: flex;
+}
+
+.love-enjoy h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+.love-enjoy p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+
+}
+.love-left{
+    width: 95%;
+}
+.love-left-top{
+    margin-bottom: 60px;
+}
+.heading1{
+    margin-bottom: 20px;
+}
+
+.desktop-mobile{
+    margin-bottom: 60px;
+}
+.desktop-mobile h3{
+    margin-bottom: 20px;
+}
+.desktop-mobile p{
+    line-height: 26px;
+}
+.love-right{
+    width: 95%;
+    margin-left: 5px;
+    top: 60px;
+}
+.love-right img{
+    width: 95%;
+}
+
+.btn{
+    position: absolute;
+    width: 342px;
+    height: 200px;
+    left: 760px;
+    top: 2706px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+}
+.btn h1{
+    background-color: #FF900E;
+    color: white;
+}
+.btn p{
+    background-color: #FF900E;
+    color: white;
+}
+
+.facts{
+    margin: 100px 200px;
+    display: flex;
+    flex-direction: column;
+}
+.facts h1{
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.icons{
+    margin: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.icons div h1{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+}
+.icons div p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+
+.icons .div{
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+}
+.icons .div:hover{
+    transform: translate(30px, 20px) rotate(180deg);
+}
+
+/* sponsors */
+.sponsors{
+     margin: 100px 200px;
+     display: flex;
+     flex-direction:column;
+     align-items: center;
+     margin-bottom: 20px;
+    /* row-gap: 10px; */
+ }
+ .sponsors h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-bottom: 20px;
+    
+ }
+ .sponsors p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+ }
+ .sponsors-logo{
+    margin: 40px 200px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ footer p{
+    margin: 40px 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    left: 240px;
+    top: 4444px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    }
+ 
+/*  --------------------------------------
+media query responsive for mobile device
+----------------------------------------*/
+
+
 @media screen and (max-width:668px) {
     *{
         margin: 5px;
         font-family: 'Open Sans', sans-serif;
         background-color: whitesmoke;
     }
+    /* check */
 
     /* nav section */
     .nav-flex{
@@ -175,15 +348,58 @@
      }
 
      .left-features{
+        margin: 0;
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
      }
+     .left-features img{
+        width: 95%;
+     }
 
      .right-features{
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         align-items: center;
      }
+
+     /* features love and enjoy */
+     .love-enjoy, .facts, .icons, .sponsors, footer p {
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+     }
+     .sponsors-logo{
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
+     }
+     .sponsors-logo img{
+        width: 50%;       
+     }
+     .love-right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     }
+
+     .btn{
+        display: none;
+        /* width: 100%;
+        margin: 0;
+        width: 342px;
+        height: 200px;
+        background: #FF900E;
+        border-radius: 18px;
+        border: none; */
+     }
+
+    
 }

@@ -283,6 +283,36 @@ h3{
     justify-content: center;
     }
  
+    /* extra section  architect tools */
+    .architect-tools {
+        margin: 80px 200px;
+    }
+
+    .architect-tools h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 53px;
+        color: #131313;
+        margin-bottom: 80px;
+    }
+
+    
+    .architect{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .architect img{
+        border-radius: 10px;
+    }
+    .architect h3{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 53px;
+        color: #131313;
+        margin-bottom: 80px;
+    }
 /*  --------------------------------------
 media query responsive for mobile device
 ----------------------------------------*/
@@ -366,12 +396,13 @@ media query responsive for mobile device
      }
 
      /* features love and enjoy */
-     .love-enjoy, .facts, .icons, .sponsors, footer p {
+     .love-enjoy, .facts, .icons, .sponsors, .architect-tools, .architect,  footer p {
         width: 100%;
         margin: 0px;
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
+        align-items: center;
      }
      .sponsors-logo{
         width: 90%;
@@ -400,6 +431,20 @@ media query responsive for mobile device
         border-radius: 18px;
         border: none; */
      }
+     .architect-tools h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 33px;
+        color: #131313;
+        margin-bottom: 60px;
+     }
+     .architect img{
+        width: 80%;
+        align-items: center;
+     }
+     
+
 
     
 }

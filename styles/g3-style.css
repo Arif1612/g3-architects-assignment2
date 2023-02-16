@@ -271,7 +271,8 @@ h3{
  }
  
  footer p{
-    margin: 40px 200px;
+    margin: 0px 200px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     height: 100px;
